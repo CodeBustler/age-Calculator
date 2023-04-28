@@ -15,19 +15,24 @@ h1 {
 }
 
 .container {
-  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  /* https://cssgradient.io/ */
+  background-image: radial-gradient(
+    circle 369px at -2.9% 12.9%,
+    rgba(247, 234, 163, 1) 0%,
+    rgba(236, 180, 238, 0.56) 46.4%,
+    rgba(163, 203, 247, 1) 100.7%
+  );
   padding: 20px;
   border-radius: 10px;
   margin: 0 20px;
   width: 400px;
-  box-shadow: 10px 20px 50px rgba(128, 128, 128, 0.384);
+  box-shadow: 5px 15px 30px rgba(128, 128, 128, 0.384);
 }
 
 label {
   font-size: larger;
   font-weight: 500;
   margin-right: 9px;
-  color: indianred;
 }
 
 input {
@@ -60,5 +65,14 @@ ul {
   font-size: large;
 }
 li::marker {
+  color: grey;
+}
+
+footer {
+  margin-top: 70px;
+}
+
+footer a {
+  text-decoration: none;
   color: grey;
 }
